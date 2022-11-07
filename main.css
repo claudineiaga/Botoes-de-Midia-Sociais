@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(240, 231, 231);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.quadrado{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 51px;
+    width: 0px;
+    height: 50px;
+    background: #eebb5c;
+    border-radius: 3px;
+    transition: all 0.5s 0.3s ease;
+}
+.quadrado p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+ul li .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+}
+ul li.facebook{
+    background: #154cc3;
+}
+ul li.twitter{
+    background: #639db3;
+}
+ul li.instagram{
+    background: #bd1837;
+}
+ul li.google{
+    background: #f0e108;
+}
+ul li.whatsapp{
+    background: #10b808;
+}
+ul li.facebook div.quadrado{
+    background: #154cc3;
+}
+ul li.twitter div.quadrado{
+    background: #639db3;
+}
+ul li.google div.quadrado{
+    background: #f0e108;
+}
+ul li.instagram div.quadrado{
+    background: #bd1837;
+}
+ul li.whatsapp div.quadrado{
+    background: #10b808;
+}
+ul li:hover .quadrado{
+    width: 180px;
+    transition: all 0.5s ease;
+}
+ul li:hover .quadrado p{
+    opacity: 1;
+    transition: all 1s 0.2s ease;
+}
